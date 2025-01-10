@@ -1,158 +1,220 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Richard Wilson - Official Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f8f9fa;
-            }
-            header {
-                background: #ff0000;
-                color: white;
-                padding: 1em 0;
-                text-align: center;
-            }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Wilson - Official Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #ff0000;
+            color: white;
+            text-align: center;
+            padding: 1em 1em;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 0.5em;
+        }
+
+        .cta {
+            margin-top: 1em;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .cta button {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            width: 90%;
+            max-width: 300px;
+        }
+
+        nav {
+            background: #343a40;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: white;
+            margin: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background: #50575d;
+        }
+
+        section {
+            padding: 1em;
+            max-width: 100%;
+            margin: 1em auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #ff0000;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            margin: auto;
+            max-width: 90%;
+        }
+
+        form input,
+        form textarea,
+        form button {
+            width: 100%;
+            max-width: 100%;
+            padding: 0.5em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            font-size: 0.9em;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
             header img {
-                border-radius: 50%;
-                width: 150px;
-                height: 150px;
-                object-fit: cover;
-                margin-bottom: 0.5em;
+                width: 80px;
+                height: 80px;
             }
-            .cta {
-                margin-top: 1em;
-            }
-            .cta button {
-                background-color: #0056b3;
-                color: white;
-                border: none;
-                padding: 10px 20px;
-                margin: 0 5px;
-                border-radius: 5px;
-                cursor: pointer;
-                font-size: 1em;
-            }
-            .cta button:hover {
-                background-color: #003d80;
-            }
+
             nav {
-                background: #343a40;
-                color: white;
-                display: flex;
-                justify-content: center;
-                padding: 0.5em 0;
+                flex-direction: column;
+                align-items: center;
             }
+
             nav a {
-                color: white;
-                margin: 0 1em;
-                text-decoration: none;
-                font-weight: bold;
+                margin: 5px 0;
             }
-            nav a:hover {
-                text-decoration: underline;
-            }
-            section {
-                padding: 2em;
-                max-width: 1000px;
-                margin: auto;
-                background: white;
-                margin-bottom: 1em;
-                border-radius: 10px;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            }
-            section h2 {
-                color: #ff0000;
-            }
-            footer {
-                background: #343a40;
-                color: white;
-                text-align: center;
-                padding: 1em 0;
-                margin-top: 2em;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <img src="photo.jpeg" alt="Richard Wilson">
-            <h1>Richard Wilson – Founder, CEO, and Investor</h1>
-            <p>Welcome to the official website of Richard Wilson. Join the largest community of family office investors worldwide.</p>
-            <div class="cta">
-                <button onclick="location.href='https://familyoffices.com'">Join the Family Office Club</button>
-                <button onclick="location.href='#contact'">Contact Richard</button>
-            </div>
-        </header>
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#family-office">Family Office Club</a>
-            <a href="#billionaires">Billionaires.com</a>
-            <a href="#newsletter">Newsletter</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-        <section id="about">
-            <h2>About Richard Wilson</h2>
-            <p>Richard Wilson has built an investor community of over 17 million professionals and hosted over 300 events globally, spending more than $25 million to deliver unparalleled value. He is the CEO of InvestorClub.com and an expert in capital raising, investing, and family offices.</p>
-            <p><strong>Education:</strong> Harvard University | <strong>Location:</strong> Kailua, Hawaii</p>
-            <p><strong>Contact:</strong> (305) 333-1155 | Richard@InvestorClub.com</p>
-        </section>
-
-        <section id="services">
-            <h2>Services</h2>
-            <p>Join one of the largest investor clubs in the world with 7,500+ registered investors and access resources to scale investments.</p>
-            <ul>
-                <li>Commercial Real Estate</li>
-                <li>Tax Advisory</li>
-                <li>Financial Consulting</li>
-                <li>Estate Planning Law</li>
-                <li>Personal Tax Planning</li>
-            </ul>
-        </section>
-
-        <section id="family-office">
-            <h2>Family Office Club</h2>
-            <p>The Family Office Club is the largest association of its kind, serving ultra-wealthy families with direct investments and capital raising opportunities.</p>
+            .cta {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="photo.jpeg" alt="Richard Wilson">
+        <h1>Richard Wilson – Founder, CEO, and Investor</h1>
+        <p>Welcome to the official website of Richard Wilson. Join the largest community of family office investors worldwide.</p>
+        <div class="cta">
             <button onclick="location.href='https://familyoffices.com'">Join the Family Office Club</button>
-        </section>
+            <button onclick="location.href='#contact'">Contact Richard</button>
+        </div>
+    </header>
 
-        <section id="billionaires">
-            <h2>Billionaires.com</h2>
-            <p>Through Billionaires.com, Richard Wilson interviews the world's top billionaires like Mark Cuban, Jeff Hoffman, Tony Robbins, and Grant Cardone. This resource shares insights on mental models and scaling strategies for entrepreneurs.</p>
-            <button onclick="location.href='https://billionaires.com'">Explore Billionaires.com</button>
-        </section>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#family-office">Family Office Club</a>
+        <a href="#billionaires">Billionaires.com</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <section id="newsletter">
-            <h2>Newsletter</h2>
-            <p>Stay updated with Richard's latest interviews, tips, and events by subscribing to his newsletter.</p>
-            <button onclick="location.href='https://www.linkedin.com/newsletters/investor-club-insights-7144302057456300032/'">Subscribe Now</button>
-        </section>
+    <section id="about">
+        <h2>About Richard Wilson</h2>
+        <p>Richard Wilson has built an investor community of over 17 million professionals and hosted over 300 events globally, spending more than $25 million to deliver unparalleled value. He is the CEO of InvestorClub.com and an expert in capital raising, investing, and family offices.</p>
+        <p><strong>Education:</strong> Harvard University | <strong>Location:</strong> Kailua, Hawaii</p>
+        <p><strong>Contact:</strong> (305) 333-1155 | Richard@InvestorClub.com</p>
+    </section>
 
-        <section id="contact">
-            <h2>Contact Richard</h2>
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+    <section id="services">
+        <h2>Services</h2>
+        <p>Join one of the largest investor clubs in the world with 7,500+ registered investors and access resources to scale investments.</p>
+        <ul>
+            <li>Commercial Real Estate</li>
+            <li>Tax Advisory</li>
+            <li>Financial Consulting</li>
+            <li>Estate Planning Law</li>
+            <li>Personal Tax Planning</li>
+        </ul>
+    </section>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+    <section id="family-office">
+        <h2>Family Office Club</h2>
+        <p>The Family Office Club is the largest association of its kind, serving ultra-wealthy families with direct investments and capital raising opportunities.</p>
+        <button onclick="location.href='https://familyoffices.com'">Join the Family Office Club</button>
+    </section>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+    <section id="billionaires">
+        <h2>Billionaires.com</h2>
+        <p>Through Billionaires.com, Richard Wilson interviews the world's top billionaires like Mark Cuban, Jeff Hoffman, Tony Robbins, and Grant Cardone. This resource shares insights on mental models and scaling strategies for entrepreneurs.</p>
+        <button onclick="location.href='https://billionaires.com'">Explore Billionaires.com</button>
+    </section>
 
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+    <section id="newsletter">
+        <h2>Newsletter</h2>
+        <p>Stay updated with Richard's latest interviews, tips, and events by subscribing to his newsletter.</p>
+        <button onclick="location.href='https://www.linkedin.com/newsletters/investor-club-insights-7144302057456300032/'">Subscribe Now</button>
+    </section>
 
-        <footer>
-            <p>&copy; 2025 Richard Wilson. All Rights Reserved.</p>
-        </footer>
-    </body>
-    </html>
+    <section id="contact">
+        <h2>Contact Richard</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Richard Wilson. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
